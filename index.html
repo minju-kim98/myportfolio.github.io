@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minju Kim's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 fixed-top">
+        <a class="navbar-brand" href="#">Minju Kim</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvasLg"
+          aria-controls="navbarOffcanvasLg"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="navbarOffcanvasLg"
+          aria-labelledby="navbarOffcanvasLgLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Contents
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#main-part"
+                  >Main</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-part">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill-part">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project-part">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cv-part">CV</a>
+              </li>
+              <li class="nav-item">
+                <div class="sns-items">
+                  <div class="sns-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.linkedin.com/in/minju-kim-111708172/"
+                      target="_blank"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                  </div>
+                  <div class="sns-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/minju-kim98/"
+                      target="_blank"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                  <div class="sns-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.instagram.com/mj3meal/"
+                      target="_blank"
+                    >
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="main-part">
+        <div class="overlay">
+          <div class="text_box" data-trigger>
+            <span class="text"></span>
+          </div>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/ssafy.jpg"
+                class="d-block w-100"
+                alt="ssafy pic"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/firenze.jpg"
+                class="d-block w-100"
+                alt="pic at Firenze"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/grad.jpg"
+                class="d-block w-100"
+                alt="graduation pic"
+              />
+            </div>
+            
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="about-part">
+        <h1 class="section-title">about</h1>
+        <div class="about-container">
+          <img id="profile" src="./images/profile.jpg" alt="profile-picture" />
+          <div id="about-details">
+            <ul>
+              <li>
+                <span class="material-symbols-outlined">person</span>
+                <p>Minju Kim</p>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">cake</span>
+                <p>1998.11.07</p>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">home</span>
+                <p>Gwangju, Republic of Korea</p>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">smartphone</span>
+                <p>010-2763-8342</p>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">mail</span>
+                <p>
+                  <a href="mailto:ducco705@snu.ac.kr">ducco705@snu.ac.kr</a>
+                </p>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">school</span>
+                <p>
+                  Dept. of Computer Science and Engineering, <br />
+                  Seoul National University
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skill-part">
+        <h1 class="section-title">skills</h1>
+        <div class="skill-container">
+          <div class="skill-box-container">
+            <div class="skill-box skill-language">
+              <h1>Language</h1>
+              <div class="language-pic">
+                <img
+                  src="./images/language.png"
+                  alt="programming languages"
+                  width="300px"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="skill-box-container">
+            <div class="skill-box skill-frontend">
+              <h1>Frontend</h1>
+              <div class="frontend-pic">
+                <img src="./images/frontend.png" alt="frontend" width="300px" />
+              </div>
+            </div>
+          </div>
+          <div class="skill-box-container skill-box-container3">
+            <div class="skill-box skill-backend">
+              <h1>Backend</h1>
+              <div class="backend-pic">
+                <img src="./images/python.png" alt="python" width="300px" />
+              </div>
+            </div>
+            <div class="skill-box skill-versioncontrol">
+              <h1>Version Control</h1>
+              <div class="versioncontrol-pic">
+                <img
+                  src="./images/versioncontrol.png"
+                  alt="version-control"
+                  width="300px"
+                />
+              </div>
+            </div>
+            <div class="skill-box skill-certificate">
+              <h1>Certificate</h1>
+              <img src="./images/qnet.png" alt="q-net" width="300px" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project-part">
+        <h1 class="section-title">projects</h1>
+        <div class="project-container">
+          <div class="item">
+            <div class="company-ci-wrapper">
+              <img src="./images/avikus.jpg" alt="Avikus" />
+            </div>
+            <h3>
+              Real-time object recognition of ship videos in Edge Device
+              environment
+            </h3>
+            <p>
+              In collaboration with Avikus, we developed a real-time object
+              recognition system for ship videos in an Edge Device environment.
+              Our system identifies and tracks objects of interest, such as
+              vessel, motorboat, navigation sign, or sailing yacht to improve
+              safety and situational awareness for ship operators.
+            </p>
+          </div>
+          <div class="item">
+            <div class="company-ci-wrapper">
+              <img src="./images/TmaxTibero.jpg" alt="Tmax Tibero" />
+            </div>
+            <h3>
+              Understanding Interpreters and Implementing Tibero's Functionality
+            </h3>
+            <p>
+              This project is structured into three distinct sections, each
+              focusing on a specific aspect. The first section delves into the
+              implementation of an Interpreter using the Go programming
+              language. Moving forward, the project addresses the practical
+              implementation of several key functionalities within Tibero. The
+              initial focus lies on Materialized views, followed by the detailed
+              implementation of Tibero's TABLE_TO_COMMA and COMMA_TO_TABLE
+              features, which are facilitated by the DBMS_UTILITY package.
+              Lastly, the project explores the development of UTL_SMTP within
+              Tibero, a crucial package utilized for email transmission via the
+              Simple Mail Transfer Protocol (SMTP).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="cv-part">
+        <h1 class="section-title">cv</h1>
+        <div class="cv-wrapper">
+          <a href="./files/Minju_Kim_CV.pdf" download>
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            Click here to download CV
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2023 Minju Kim All right reserved
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

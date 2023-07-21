@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR&family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: linear-gradient(to left top, #d1c0e8, white);
+}
+
+/***********************************
+*               header             *
+***********************************/
+.sns-items {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .sns-item {
+    margin-right: 15px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .skill-box-container3 {
+    flex-direction: row;
+  }
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .about-container {
+    flex-direction: row;
+  }
+  .skill-box-container3 {
+    flex-direction: column;
+  }
+  .project-container {
+    grid-template-columns: repeat(2, minmax(492px, 1fr));
+  }
+}
+
+.section-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px;
+}
+
+/***********************************
+*            main-part             *
+***********************************/
+main {
+  margin-top: 56px;
+}
+
+#main-part {
+  margin-bottom: 25px;
+}
+
+.overlay {
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.555);
+  font-weight: bold;
+  color: black;
+  border-radius: 2%;
+}
+
+.text_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2rem;
+}
+
+ @keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+}
+
+
+/***********************************
+*            about-part            *
+***********************************/
+#about-part > h1 {
+  padding-top: 50px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile {
+  width: 300px;
+  border-radius: 20%;
+  margin: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin: 50px;
+}
+#about-details > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+#about-details > ul > li {
+  font-size: 1.2rem;
+  line-height: 200%;
+  display: flex;
+  align-items: center;
+}
+#about-details p {
+  margin: 0;
+  line-height: 150%;
+  color: black;
+  text-decoration: none;
+}
+#about-details p > a {
+  color: black;
+  text-decoration: none;
+}
+.material-symbols-outlined {
+  margin: 20px;
+}
+
+/***********************************
+*            skill-part            *
+***********************************/
+#skill-part > h1 {
+  padding-top: 50px;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-box h1 {
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+  font-size: 1.3rem;
+  color: rgb(234, 133, 234);
+}
+
+.skill-box {
+  background-color: white;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill-box:hover {
+  box-shadow: 0 5px 15px #afe0f5;
+}
+
+.skill-language {
+  padding: 20px;
+}
+
+.language-pic > img {
+  margin: 0 auto;
+}
+
+.skill-frontend {
+  padding: 20px;
+}
+
+.frontend-pic > img {
+  margin: 0 auto;
+}
+
+.skill-backend {
+  padding: 20px;
+}
+
+.backend-pic > img {
+  margin: 0 auto;
+}
+.skill-versioncontrol {
+  padding: 20px;
+}
+
+.versioncontrol-pic > img {
+  margin: 0 auto;
+}
+
+.skill-certificate {
+  padding: 20px;
+}
+
+.skill-certificate > img {
+  margin: 0 auto;
+}
+
+.skill-certificate > p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/***********************************
+*          project-part            *
+***********************************/
+#project-part > h1 {
+  padding-top: 50px;
+}
+
+.project-container {
+  display: grid;
+  grid-gap: 2rem;
+  place-items: center;
+  justify-content: center;
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company-ci-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.company-ci-wrapper > img {
+  height: 40px;
+}
+
+.item h3 {
+  margin: 10px;
+}
+
+.item p {
+  margin: 10px;
+}
+
+.item:hover {
+  box-shadow: 0 5px 15px #afe0f5;
+}
+
+/***********************************
+*              cv-part             *
+***********************************/
+#cv-part > h1 {
+  padding-top: 50px;
+}
+
+.cv-wrapper {
+  font-size: 25px;
+  text-align: center;
+  margin: 25px;
+}
+
+#cv-part a {
+  text-decoration: none;
+  color: black;
+}
