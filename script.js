@@ -10,4 +10,5 @@ function typing(){
         i = 0;
     }
 }
+
 setInterval(typing, 200)
