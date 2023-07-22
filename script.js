@@ -1,3 +1,4 @@
+//Typing animation
 const content = "저는 SSAFY 광주캠퍼스 임베디드반 김민주입니다.";
 const text = document.querySelector(".text");
 let i = 0;

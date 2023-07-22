@@ -16,7 +16,8 @@ a:hover,
 .btn-close:hover,
 .carousel-control-prev:hover,
 .carousel-control-next:hover,
-.carousel-indicators > button:hover{
+.carousel-indicators > button:hover,
+i:hover{
   cursor: url(./images/balloon-heart-fill.png) 20 20, auto;
 }
 
@@ -111,9 +112,6 @@ main {
     opacity: 0;
   }
 }
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
@@ -306,7 +304,8 @@ main {
 }
 
 .item h3 {
-  margin: 10px;
+  padding: 20px;
+  border-bottom: 1px solid lightslategrey;
 }
 
 .item p {
@@ -320,17 +319,41 @@ main {
 /***********************************
 *              cv-part             *
 ***********************************/
+#cv-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
 #cv-part > h1 {
   padding-top: 50px;
 }
 
+
 .cv-wrapper {
-  font-size: 25px;
+  width: 80px;
+  height: 80px;
   text-align: center;
-  margin: 25px;
+  margin: 25px auto 50px;
+  background-color: #E8E5C0;
+  border-radius: 50%;
 }
 
 #cv-part a {
-  text-decoration: none;
   color: black;
+  font-size: 35px;
+  margin: 0 auto;
+  line-height: 220%;
+}
+
+.thumbnail{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.cv-wrapper:hover + .thumbnail{
+  display: block;
 }
